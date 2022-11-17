@@ -11,65 +11,10 @@
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <link rel="stylesheet" href="../src/globalStyles.css" />
-    <link rel="stylesheet" href="../src/index.css" />
-    <link rel="stylesheet" href="../src/buttons.css" />
-    <link rel="stylesheet" href="../src/input.css" />
-    <link rel="stylesheet" href="../src/financePage.css" />
     <title>Nu Kenzie</title>
   </head>
   <body>
     <!--
-    <div class="background">
-      <div class="container">
-        <div class="brand">
-          <h1><span>Nu</span> Kenzie</h1>
-          <h3>Centralize o controle das suas finanças</h3>
-          <p>de forma rápida e segura</p>
-          <button>Iniciar</button>
-        </div>
-        <div class="bg-1">
-          <div class="bg-2">
-            <div class="bg-3">
-              <div class="panel">
-                <div class="dots-container">
-                  <ul class="dots">
-                    <li class="red-dot"></li>
-                    <li class="green-dot"></li>
-                    <li class="black-dot"></li>
-                  </ul>
-                </div>
-                <div class="blank"></div>
-                <div class="blank"></div>
-                <div class="blank"></div>
-                <div class="blank"></div>
-                <div class="blank"></div>
-                <div class="blank"></div>
-              </div>
-              <div class="decorative-1">
-                <div class="card-container">
-                  <img src="../card-icon.png" alt="" />
-                </div>
-                <div class="decorative-line">
-                  <div class="line-1"></div>
-                  <div class="line-2"></div>
-                </div>
-              </div>
-              <div class="decorative-2">
-                <div class="card-container">
-                  <img src="../card-icon.png" alt="" />
-                </div>
-                <div class="decorative-line">
-                  <div class="line-1"></div>
-                  <div class="line-2"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    -->
     <header>
       <div class="top">
         <h1><span>Nu</span> Kenzie</h1>
@@ -77,37 +22,46 @@
       </div>
     </header>
     <main class="container main-container">
-      <section class="filter-section">
-        <div class="description">
-          <h3>Descrição</h3>
-          <div>
-            <input
-              class="default-input"
-              type="text"
-              placeholder="Digite aqui sua descrição"
-            />
-            <small>Ex: Compra de roupas</small>
+      <section class="total-info-container">
+        <div class="filter-section">
+          <div class="description">
+            <h3>Descrição</h3>
+            <div>
+              <input
+                class="default-input"
+                type="text"
+                placeholder="Digite aqui sua descrição"
+              />
+              <small>Ex: Compra de roupas</small>
+            </div>
           </div>
+          <div class="filters">
+            <div>
+              <label for="insert-value">Valor</label>
+              <input
+                type="text"
+                id="insert-value"
+                placeholder="1"
+                class="default-input"
+              />
+            </div>
+            <div>
+              <label for="insert-type">Tipo de valor</label>
+              <select class="default-input" id="insert-type">
+                <option value="entry" selected>Entrada</option>
+                <option value="exit">Saída</option>
+              </select>
+            </div>
+          </div>
+          <button class="brand-btn insert-value-btn">Inserir valor</button>
         </div>
-        <div class="filters">
+        <div class="total-info hidden">
           <div>
-            <label for="insert-value">Valor</label>
-            <input
-              type="text"
-              id="insert-value"
-              placeholder="1"
-              class="default-input"
-            />
+            <h4>Valor total:</h4>
+            <h3>$ 8456</h3>
           </div>
-          <div>
-            <label for="insert-type">Tipo de valor</label>
-            <select class="default-input" id="insert-type">
-              <option value="entry" selected>Entrada</option>
-              <option value="exit">Saída</option>
-            </select>
-          </div>
+          <p>O valor se refere ao saldo</p>
         </div>
-        <button class="brand-btn insert-value-btn">Inserir valor</button>
       </section>
       <section class="finances-section sec">
         <div class="finances-top">
@@ -139,8 +93,21 @@
             </div>
           </li>
         </ul>
+        <ul class="finance-list hidden">
+          <li>
+            <div class="finance-info">
+              <h3>Salário - Mês Dezembro</h3>
+              <div>
+                <p>R$ 6.660,00</p>
+                <button><img src="../trash.png" /></button>
+              </div>
+            </div>
+            <p>Entrada</p>
+          </li>
+        </ul>
       </section>
     </main>
+    -->
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
   </body>

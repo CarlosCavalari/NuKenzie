@@ -29,7 +29,6 @@
   --radius-3: 4px;
   --radius-4: 2px;
 }
-
 body {
   font-family: "Nunito";
 }
@@ -54,6 +53,9 @@ select {
   font-family: "Nunito";
 }
 
+.hidden {
+  display: none !important;
+}
 .container {
   margin: 0 auto;
   width: 1130px;
