@@ -1,0 +1,107 @@
+header {
+  width: 100%;
+  box-shadow: 0px 4px 32px -12px rgba(0, 0, 0, 0.25);
+  background-color: var(--color-grey-4);
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+.top {
+  margin: 0 auto;
+  width: 1130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+.top > h1 > span {
+  color: var(--color-brand-1);
+}
+.main-container {
+  margin-top: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.filter-section {
+  border: 1px solid var(--color-grey-3);
+  border-radius: var(--radius-1);
+  padding: 50px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-8);
+  width: 363px;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-8);
+}
+.description > div {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-10);
+}
+.filters {
+  display: flex;
+  gap: var(--gap-10);
+}
+.filters > div {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-10);
+  width: 50%;
+}
+.filters > div > input {
+  width: 70%;
+}
+.filters > div > select {
+  width: 100%;
+  padding-left: 10px;
+  color: var(--color-grey-2);
+  letter-spacing: 1px;
+}
+.finances-section {
+  width: 640px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-5);
+}
+.finances-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.finances-top > div {
+  display: flex;
+  gap: var(--gap-8);
+}
+.empty-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-5);
+}
+.empty-list > li {
+  background-color: #f8f9fa;
+  padding: 23px 15px;
+  border-left: 5px solid var(--color-grey-3);
+  border-radius: var(--radius-1);
+}
+.empty-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-7);
+}
+.empty-decoration-1 {
+  background-color: var(--color-grey-3);
+  width: 70%;
+  height: 20px;
+  border-radius: var(--radius-3);
+}
+.empty-decoration-2 {
+  background-color: var(--color-grey-3);
+  width: 30%;
+  height: 20px;
+  border-radius: var(--radius-3);
+}

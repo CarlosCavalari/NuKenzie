@@ -13,9 +13,13 @@
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <link rel="stylesheet" href="../src/globalStyles.css" />
     <link rel="stylesheet" href="../src/index.css" />
+    <link rel="stylesheet" href="../src/buttons.css" />
+    <link rel="stylesheet" href="../src/input.css" />
+    <link rel="stylesheet" href="../src/financePage.css" />
     <title>Nu Kenzie</title>
   </head>
   <body>
+    <!--
     <div class="background">
       <div class="container">
         <div class="brand">
@@ -65,6 +69,78 @@
         </div>
       </div>
     </div>
+    -->
+    <header>
+      <div class="top">
+        <h1><span>Nu</span> Kenzie</h1>
+        <button class="default-btn">Início</button>
+      </div>
+    </header>
+    <main class="container main-container">
+      <section class="filter-section">
+        <div class="description">
+          <h3>Descrição</h3>
+          <div>
+            <input
+              class="default-input"
+              type="text"
+              placeholder="Digite aqui sua descrição"
+            />
+            <small>Ex: Compra de roupas</small>
+          </div>
+        </div>
+        <div class="filters">
+          <div>
+            <label for="insert-value">Valor</label>
+            <input
+              type="text"
+              id="insert-value"
+              placeholder="1"
+              class="default-input"
+            />
+          </div>
+          <div>
+            <label for="insert-type">Tipo de valor</label>
+            <select class="default-input" id="insert-type">
+              <option value="entry" selected>Entrada</option>
+              <option value="exit">Saída</option>
+            </select>
+          </div>
+        </div>
+        <button class="brand-btn insert-value-btn">Inserir valor</button>
+      </section>
+      <section class="finances-section sec">
+        <div class="finances-top">
+          <h3>Resumo financeiro</h3>
+          <div>
+            <button class="brand-btn all-btn">Todos</button>
+            <button class="default-btn">Entradas</button>
+            <button class="default-btn">Despesas</button>
+          </div>
+        </div>
+        <h2>Você ainda não possui nenhum lançamento</h2>
+        <ul class="empty-list">
+          <li>
+            <div class="empty-container">
+              <div class="empty-decoration-1"></div>
+              <div class="empty-decoration-2"></div>
+            </div>
+          </li>
+          <li>
+            <div class="empty-container">
+              <div class="empty-decoration-1"></div>
+              <div class="empty-decoration-2"></div>
+            </div>
+          </li>
+          <li>
+            <div class="empty-container">
+              <div class="empty-decoration-1"></div>
+              <div class="empty-decoration-2"></div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
   </body>

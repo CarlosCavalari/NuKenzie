@@ -1,0 +1,7 @@
+.default-input {
+  background-color: var(--color-grey-3);
+  border: none;
+  outline: none;
+  border-radius: var(--radius-3);
+  height: 52px;
+}
