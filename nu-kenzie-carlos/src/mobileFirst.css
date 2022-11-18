@@ -1,0 +1,188 @@
+/* --------------------------- HomePage --------------------------- */
+@media (max-width: 1310px) {
+  .bg-1 {
+    display: none !important;
+  }
+  .background {
+    align-items: flex-start !important;
+  }
+  .container {
+    width: max-content !important;
+    font-size: 66px !important;
+    height: max-content !important;
+  }
+  .brand {
+    align-items: center !important;
+    width: 100% !important;
+    height: max-content !important;
+    justify-content: flex-start !important;
+    gap: var(--gap-4) !important;
+  }
+  .brand > h1 {
+    font-size: 120px !important;
+    margin: 30px 0 150px 0;
+  }
+  .brand > h3 {
+    font-size: 60px !important;
+    width: 490px !important;
+    line-height: 80px !important;
+    text-align: center !important;
+  }
+  .brand > p {
+    font-size: 28px !important;
+  }
+  .brand > button {
+    width: 490px !important;
+    height: 80px !important;
+    font-size: 28px !important;
+  }
+}
+@media (max-width: 600px) {
+  .brand > h1 {
+    font-size: 80px !important;
+    margin-bottom: 50px !important;
+  }
+  .brand > h3 {
+    font-size: 40px !important;
+    width: 330px !important;
+  }
+  .brand > p {
+    font-size: 24px !important;
+  }
+  .brand > button {
+    width: 330px !important;
+    height: 70px !important;
+  }
+}
+@media (max-width: 375px) {
+  .brand > h1 {
+    margin: 30px auto !important;
+    font-size: 70px !important;
+  }
+  .brand > h3 {
+    font-size: 34px !important;
+    width: 270px !important;
+    line-height: 50px !important;
+  }
+  .brand > p {
+    font-size: 18px !important;
+  }
+  .brand > button {
+    width: 250px !important;
+    height: 56px !important;
+  }
+}
+@media (max-width: 316px) {
+  .brand > h1 {
+    font-size: 40px !important;
+    margin-bottom: 100px !important;
+  }
+  .brand > h3 {
+    font-size: 26px !important;
+    width: 220px !important;
+  }
+  .brand > button {
+    width: 200px !important;
+    height: 50px !important;
+  }
+}
+
+/* --------------------------- FinancesPage --------------------------- */
+
+@media (max-width: 1160px) {
+  .top {
+    width: 650px !important;
+  }
+  .finance-container {
+    width: 650px !important;
+  }
+  .main-container {
+    flex-direction: column;
+    align-items: center !important;
+    gap: var(--gap-2);
+  }
+  .total-info-container {
+    align-items: center !important;
+  }
+  .filter-section {
+    width: 600px !important;
+  }
+  .finances-section {
+    width: 650px !important;
+  }
+  .total-info {
+    width: 600px;
+    padding: 50px 25px !important;
+  }
+}
+@media (max-width: 720px) {
+  .top {
+    width: 530px !important;
+  }
+  .filter-section {
+    width: 480px !important;
+  }
+  .finances-section {
+    width: 530px !important;
+  }
+  .finance-container {
+    width: 480px !important;
+  }
+  .total-info {
+    width: 480px;
+    padding: 50px 25px !important;
+  }
+  .default-btn,
+  .brand-btn {
+    padding: 10px 12px !important;
+    font-size: 17px !important;
+  }
+}
+@media (max-width: 560px) {
+  .top {
+    width: 380px !important;
+  }
+  .filter-section {
+    width: 380px !important;
+    border: none !important;
+  }
+  .finances-section {
+    width: 380px !important;
+  }
+  .total-info {
+    width: 330px;
+  }
+  .finances-section > h2 {
+    text-align: center;
+  }
+  .finances-top {
+    flex-direction: column !important;
+    gap: var(--gap-8);
+  }
+}
+@media (max-width: 460px) {
+  .top {
+    width: 270px !important;
+  }
+  .top > h1 {
+    font-size: 23px !important;
+  }
+  .filter-section {
+    width: 263px !important;
+    padding: 38px 8px !important;
+  }
+  .total-info {
+    width: 223px;
+    padding: 25px 20px !important;
+  }
+  .finances-section {
+    width: 263px !important;
+  }
+  .main-container {
+    width: max-content !important;
+  }
+  .default-btn,
+  .brand-btn {
+    padding: 5px 9px !important;
+  }
+}

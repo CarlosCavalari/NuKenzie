@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
+import "./mobileFirst.css";
 import "./globalStyles.css";
 import "./financePage.css";
 import "./buttons.css";

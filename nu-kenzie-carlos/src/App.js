@@ -2,10 +2,10 @@ import FinancePage from "./components/financePage";
 import InitialPage from "./components/initialPage";
 import { useState } from "react";
 function App() {
-  const [algo, setAlgo] = useState(true);
+  const [page, setPage] = useState(true);
   return (
     <>
-      {algo ? <InitialPage page={setAlgo} /> : <FinancePage page={setAlgo} />}
+      {page ? <InitialPage page={setPage} /> : <FinancePage page={setPage} />}
     </>
   );
 }

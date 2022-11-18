@@ -56,7 +56,18 @@ select {
 .hidden {
   display: none !important;
 }
-.container {
-  margin: 0 auto;
-  width: 1130px;
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+select {
+  cursor: pointer;
+  -webkit-appearance: none;
+  background: url("./assets/arrow-down.png") no-repeat center right 10px;
+  background-size: 20px;
 }

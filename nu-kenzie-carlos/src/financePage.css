@@ -6,6 +6,10 @@ header {
   display: flex;
   align-items: center;
 }
+.finance-container {
+  margin: 0 auto;
+  width: 1130px;
+}
 .top {
   margin: 0 auto;
   width: 1130px;

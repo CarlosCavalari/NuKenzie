@@ -1,4 +1,5 @@
-import { useState } from "react";
+import imgTrash from "../assets/trash.png";
+import { FilterContainer } from "./filterButtons.jsx";
 function FinancePage({ page }) {
   return (
     <div>
@@ -12,7 +13,7 @@ function FinancePage({ page }) {
           </button>
         </div>
       </header>
-      <main className="container main-container">
+      <main className="finance-container main-container">
         <section className="total-info-container">
           <div className="filter-section">
             <div className="description">
@@ -28,21 +29,21 @@ function FinancePage({ page }) {
             </div>
             <div className="filters">
               <div>
-                <label for="insert-value">Valor</label>
+                <label htmlFor="insert-value">Valor</label>
                 <input
-                  type="text"
+                  type="number"
                   id="insert-value"
                   placeholder="1"
                   className="default-input"
                 />
               </div>
               <div>
-                <label for="insert-type">Tipo de valor</label>
+                <label htmlFor="insert-type">Tipo de valor</label>
                 <select className="default-input" id="insert-type">
                   <option value="entry" selected>
                     Entrada
                   </option>
-                  <option value="exit">Saída</option>
+                  <option value="exit">Despesa</option>
                 </select>
               </div>
             </div>
@@ -50,7 +51,7 @@ function FinancePage({ page }) {
               Inserir valor
             </button>
           </div>
-          <div className="total-info hidden">
+          <div className="total-info">
             <div>
               <h4>Valor total:</h4>
               <h3>$ 8456</h3>
@@ -61,11 +62,7 @@ function FinancePage({ page }) {
         <section className="finances-section sec">
           <div className="finances-top">
             <h3>Resumo financeiro</h3>
-            <div>
-              <button className="brand-btn all-btn">Todos</button>
-              <button className="default-btn">Entradas</button>
-              <button className="default-btn">Despesas</button>
-            </div>
+            <FilterContainer />
           </div>
           <h2>Você ainda não possui nenhum lançamento</h2>
           <ul className="empty-list">
@@ -95,7 +92,7 @@ function FinancePage({ page }) {
                 <div>
                   <p>R$ 6.660,00</p>
                   <button>
-                    <img src="../trash.png" />
+                    <img src={imgTrash} />
                   </button>
                 </div>
               </div>
