@@ -1,5 +1,5 @@
 import imgCard from "../assets/card-icon.png";
-function InitialPage({ page }) {
+export function InitialPage({ page }) {
   return (
     <div className="background">
       <div className="container">
@@ -54,4 +54,3 @@ function InitialPage({ page }) {
     </div>
   );
 }
-export default InitialPage;
