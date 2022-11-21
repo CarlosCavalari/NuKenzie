@@ -91,6 +91,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: var(--gap-5);
+  margin-bottom: 200px;
 }
 .finances-top {
   display: flex;

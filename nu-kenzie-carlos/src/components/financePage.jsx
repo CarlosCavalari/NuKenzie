@@ -1,6 +1,8 @@
-import { RenderSection } from "./financeSection.jsx";
+import { useState } from "react";
+import { FinanceSection } from "./financeSection.jsx";
 import { SetFinance } from "./setFinance.jsx";
 export function FinancePage({ page }) {
+  const [lista, setLista] = useState([]);
   return (
     <div>
       <header>
@@ -14,8 +16,8 @@ export function FinancePage({ page }) {
         </div>
       </header>
       <main className="finance-container main-container">
-        <SetFinance />
-        <RenderSection />
+        <SetFinance lista={lista} setLista={setLista} />
+        <FinanceSection lista={lista} setLista={setLista} />
       </main>
     </div>
   );
