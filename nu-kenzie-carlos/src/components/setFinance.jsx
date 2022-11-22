@@ -1,5 +1,10 @@
 import { useState } from "react";
-import { Finance } from "./financeItem";
+import {
+  DescriptionContainer,
+  SetFilterContainer,
+  ValueTypeContainer,
+} from "./formContainers";
+import { TotalMoney } from "./totalMoney";
 
 export function SetFinance({ financesList, setFinancesList }) {
   const [description, setDescription] = useState("");
@@ -27,52 +32,16 @@ export function SetFinance({ financesList, setFinancesList }) {
   return (
     <section className="total-info-container">
       <form className="filter-section" onSubmit={handleSubmit}>
-        <div className="description">
-          <h3>Descrição</h3>
-          <div>
-            <input
-              className="default-input"
-              type="text"
-              placeholder="Digite aqui sua descrição"
-              onChange={(event) => setDescription(event.target.value)}
-            />
-            <small>Ex: Compra de roupas</small>
-          </div>
-        </div>
+        <DescriptionContainer setDescription={setDescription} />
         <div className="filters">
-          <div>
-            <label htmlFor="insert-value">Valor</label>
-            <input
-              type="number"
-              id="insert-value"
-              placeholder="1"
-              className="default-input"
-              onChange={(event) => setValue(event.target.value)}
-            />
-          </div>
-          <div>
-            <label htmlFor="insert-type">Tipo de valor</label>
-            <select
-              className="default-input"
-              id="insert-type"
-              onChange={(event) => setValueType(event.target.value)}
-            >
-              <option value="Entrada">Entrada</option>
-              <option value="Despesa">Despesa</option>
-            </select>
-          </div>
+          <SetFilterContainer setValue={setValue} />
+          <ValueTypeContainer setValueType={setValueType} />
         </div>
         <button className="brand-btn insert-value-btn" type="submit">
           Inserir valor
         </button>
       </form>
-      <div className="total-info">
-        <div>
-          <h4>Valor total:</h4>
-          <h3>$ {atualValue}</h3>
-        </div>
-        <p>O valor se refere ao saldo</p>
-      </div>
+      <TotalMoney atualValue={atualValue} />
     </section>
   );
 }
