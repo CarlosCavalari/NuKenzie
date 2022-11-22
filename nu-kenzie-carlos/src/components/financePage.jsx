@@ -2,7 +2,7 @@ import { useState } from "react";
 import { FinanceSection } from "./financeSection.jsx";
 import { SetFinance } from "./setFinance.jsx";
 export function FinancePage({ page }) {
-  const [lista, setLista] = useState([]);
+  const [financesList, setFinancesList] = useState([]);
   return (
     <div>
       <header>
@@ -16,8 +16,14 @@ export function FinancePage({ page }) {
         </div>
       </header>
       <main className="finance-container main-container">
-        <SetFinance lista={lista} setLista={setLista} />
-        <FinanceSection lista={lista} setLista={setLista} />
+        <SetFinance
+          financesList={financesList}
+          setFinancesList={setFinancesList}
+        />
+        <FinanceSection
+          financesList={financesList}
+          setFinancesList={setFinancesList}
+        />
       </main>
     </div>
   );

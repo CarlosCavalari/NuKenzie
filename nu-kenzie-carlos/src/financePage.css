@@ -132,6 +132,8 @@ header {
   border-radius: var(--radius-3);
 }
 .finance-list {
+  overflow-y: auto;
+  height: 630px;
   width: 100%;
   display: flex;
   flex-direction: column;

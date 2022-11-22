@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Finance } from "./financeItem";
 
-export function SetFinance({ lista, setLista }) {
+export function SetFinance({ financesList, setFinancesList }) {
   const [description, setDescription] = useState("");
   const [value, setValue] = useState("");
   const [valueType, setValueType] = useState("Entrada");
@@ -16,7 +16,7 @@ export function SetFinance({ lista, setLista }) {
       value: value,
       valueType: valueType,
     };
-    setLista([...lista, item]);
+    setFinancesList([...financesList, item]);
     setTotalValue(
       item.valueType === "Entrada"
         ? parseInt(atualValue) + parseInt(item.value)

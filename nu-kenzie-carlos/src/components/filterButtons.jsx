@@ -47,6 +47,7 @@ function FilterBtnsExits({ choosed }) {
     </div>
   );
 }
+
 export function FilterContainer() {
   const [choosed, setChoosed] = useState(0);
   return (

@@ -3,7 +3,7 @@ import { BlankList } from "./blankList";
 import { FilterContainer } from "./filterButtons";
 import { Finance } from "./financeItem";
 
-export function FinanceSection({ lista, setLista, deleted }) {
+export function FinanceSection({ financesList, setFinancesList, deleted }) {
   return (
     <section className="finances-section sec">
       <div className="finances-top">
@@ -11,10 +11,10 @@ export function FinanceSection({ lista, setLista, deleted }) {
         <FilterContainer />
       </div>
       <ul className="finance-list">
-        {lista.length === 0 ? (
+        {financesList.length === 0 ? (
           <BlankList />
         ) : (
-          lista.map((transition, index) => (
+          financesList.map((transition, index) => (
             <Finance key={index} transition={transition} deleted={deleted} />
           ))
         )}
