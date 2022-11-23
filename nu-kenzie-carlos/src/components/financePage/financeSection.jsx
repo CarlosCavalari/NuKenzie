@@ -5,7 +5,7 @@ import { Finance } from "../financePage/financeItem";
 
 export function FinanceSection({
   financesList,
-  deleted,
+  setFinancesList,
   setTotalValue,
   atualValue,
 }) {
@@ -25,11 +25,9 @@ export function FinanceSection({
             <Finance
               key={index}
               transition={transition}
-              deleted={deleted}
               filter={filter}
               financesList={financesList}
-              setTotalValue={setTotalValue}
-              atualValue={atualValue}
+              setFinancesList={setFinancesList}
             />
           ))
         )}

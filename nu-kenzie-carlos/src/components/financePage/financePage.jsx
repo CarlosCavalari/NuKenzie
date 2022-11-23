@@ -12,10 +12,10 @@ export function FinancePage({ page }) {
         <SetFinance
           financesList={financesList}
           setFinancesList={setFinancesList}
-          atualValue={atualValue}
         />
         <FinanceSection
           financesList={financesList}
+          setFinancesList={setFinancesList}
           setTotalValue={setTotalValue}
           atualValue={atualValue}
         />

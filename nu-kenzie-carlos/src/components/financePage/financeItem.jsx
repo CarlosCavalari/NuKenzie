@@ -1,13 +1,15 @@
+import { useEffect } from "react";
 import imgTrash from "../../assets/trash.png";
 
-export function Finance({
-  transition,
-  deleted,
-  filter,
-  financesList,
-  setTotalValue,
-  atualValue,
-}) {
+export function Finance({ transition, filter, financesList, setFinancesList }) {
+  function handleDelete(e) {
+    e.preventDefault();
+    let removedList = financesList.filter((elem, index) => {
+      return elem.id !== transition.id;
+    });
+    setFinancesList(removedList);
+  }
+
   function Item() {
     return (
       <li>
@@ -16,8 +18,8 @@ export function Finance({
           <div>
             <p>R$ {transition.value}</p>
             <button
-              onClick={() => {
-                deleted(transition);
+              onClick={(e) => {
+                handleDelete(e);
               }}
             >
               <img src={imgTrash} alt="" />
@@ -28,11 +30,6 @@ export function Finance({
       </li>
     );
   }
-  transition.valueType === "Entrada"
-    ? setTotalValue(
-        financesList.reduce((prev, curr) => prev + +curr.value, 0).toFixed(2)
-      )
-    : console.log(+atualValue - transition.value);
 
   return transition.valueType === filter ? (
     <Item />

@@ -6,7 +6,7 @@ import {
 } from "../financePage/formContainers";
 import { TotalMoney } from "../financePage/totalMoney";
 
-export function SetFinance({ financesList, setFinancesList, atualValue }) {
+export function SetFinance({ financesList, setFinancesList }) {
   const [description, setDescription] = useState("");
   const [value, setValue] = useState("");
   const [valueType, setValueType] = useState("Entrada");
@@ -16,6 +16,7 @@ export function SetFinance({ financesList, setFinancesList, atualValue }) {
     e.preventDefault();
     setSection(false);
     let item = {
+      id: financesList.length + 1,
       description: description,
       value: value,
       valueType: valueType,
@@ -35,7 +36,7 @@ export function SetFinance({ financesList, setFinancesList, atualValue }) {
           Inserir valor
         </button>
       </form>
-      <TotalMoney atualValue={atualValue} />
+      <TotalMoney financesList={financesList} />
     </section>
   );
 }
