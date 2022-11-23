@@ -4,6 +4,7 @@ import { Header } from "./header.jsx";
 import { SetFinance } from "./setFinance.jsx";
 export function FinancePage({ page }) {
   const [financesList, setFinancesList] = useState([]);
+  const [atualValue, setTotalValue] = useState(0);
   return (
     <div>
       <Header page={page} />
@@ -11,10 +12,12 @@ export function FinancePage({ page }) {
         <SetFinance
           financesList={financesList}
           setFinancesList={setFinancesList}
+          atualValue={atualValue}
         />
         <FinanceSection
           financesList={financesList}
-          setFinancesList={setFinancesList}
+          setTotalValue={setTotalValue}
+          atualValue={atualValue}
         />
       </main>
     </div>

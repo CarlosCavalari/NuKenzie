@@ -6,12 +6,11 @@ import {
 } from "./formContainers";
 import { TotalMoney } from "./totalMoney";
 
-export function SetFinance({ financesList, setFinancesList }) {
+export function SetFinance({ financesList, setFinancesList, atualValue }) {
   const [description, setDescription] = useState("");
   const [value, setValue] = useState("");
   const [valueType, setValueType] = useState("Entrada");
   const [blank, setSection] = useState(true);
-  const [atualValue, setTotalValue] = useState(0);
 
   function handleSubmit(event) {
     event.preventDefault();
@@ -22,11 +21,6 @@ export function SetFinance({ financesList, setFinancesList }) {
       valueType: valueType,
     };
     setFinancesList([...financesList, item]);
-    setTotalValue(
-      item.valueType === "Entrada"
-        ? parseInt(atualValue) + parseInt(item.value)
-        : parseInt(atualValue) - parseInt(item.value)
-    );
   }
 
   return (
