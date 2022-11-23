@@ -1,5 +1,4 @@
-import { useState } from "react";
-import imgTrash from "../assets/trash.png";
+import imgTrash from "../../assets/trash.png";
 
 export function Finance({
   transition,
@@ -33,7 +32,7 @@ export function Finance({
     ? setTotalValue(
         financesList.reduce((prev, curr) => prev + +curr.value, 0).toFixed(2)
       )
-    : setTotalValue(+atualValue - transition.value);
+    : console.log(+atualValue - transition.value);
 
   return transition.valueType === filter ? (
     <Item />

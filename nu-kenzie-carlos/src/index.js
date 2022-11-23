@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
+import "./components/initialPage/index.css";
 import "./mobileFirst.css";
 import "./globalStyles.css";
-import "./financePage.css";
+import "./components/financePage/financePage.css";
 import "./buttons.css";
-import "./input.css";
+import "./components/financePage/input.css";
 import App from "./App";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

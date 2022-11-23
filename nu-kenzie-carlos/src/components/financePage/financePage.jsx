@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { FinanceSection } from "./financeSection.jsx";
-import { Header } from "./header.jsx";
-import { SetFinance } from "./setFinance.jsx";
+import { Header } from "../financePage/header";
+import { FinanceSection } from "../financePage/financeSection";
+import { SetFinance } from "../financePage/setFinance";
 export function FinancePage({ page }) {
   const [financesList, setFinancesList] = useState([]);
   const [atualValue, setTotalValue] = useState(0);

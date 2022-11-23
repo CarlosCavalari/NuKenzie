@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { BlankList } from "./blankList";
-import { FilterContainer } from "./filterButtons";
-import { Finance } from "./financeItem";
+import { BlankList } from "../financePage/blankList";
+import { FilterContainer } from "../financePage/filterButtons";
+import { Finance } from "../financePage/financeItem";
 
 export function FinanceSection({
   financesList,

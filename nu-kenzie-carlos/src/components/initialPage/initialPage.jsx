@@ -1,4 +1,4 @@
-import imgCard from "../assets/card-icon.png";
+import imgCard from "../../assets/card-icon.png";
 export function InitialPage({ page }) {
   return (
     <div className="background">

@@ -3,8 +3,8 @@ import {
   DescriptionContainer,
   SetFilterContainer,
   ValueTypeContainer,
-} from "./formContainers";
-import { TotalMoney } from "./totalMoney";
+} from "../financePage/formContainers";
+import { TotalMoney } from "../financePage/totalMoney";
 
 export function SetFinance({ financesList, setFinancesList, atualValue }) {
   const [description, setDescription] = useState("");
@@ -12,8 +12,8 @@ export function SetFinance({ financesList, setFinancesList, atualValue }) {
   const [valueType, setValueType] = useState("Entrada");
   const [blank, setSection] = useState(true);
 
-  function handleSubmit(event) {
-    event.preventDefault();
+  function handleSubmit(e) {
+    e.preventDefault();
     setSection(false);
     let item = {
       description: description,
@@ -25,7 +25,7 @@ export function SetFinance({ financesList, setFinancesList, atualValue }) {
 
   return (
     <section className="total-info-container">
-      <form className="filter-section" onSubmit={handleSubmit}>
+      <form className="filter-section" onSubmit={(e) => handleSubmit(e)}>
         <DescriptionContainer setDescription={setDescription} />
         <div className="filters">
           <SetFilterContainer setValue={setValue} />
