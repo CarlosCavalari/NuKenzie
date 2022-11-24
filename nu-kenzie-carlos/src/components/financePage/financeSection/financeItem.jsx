@@ -1,10 +1,9 @@
-import { useEffect } from "react";
-import imgTrash from "../../assets/trash.png";
+import imgTrash from "../../../assets/trash.png";
 
 export function Finance({ transition, filter, financesList, setFinancesList }) {
   function handleDelete(e) {
     e.preventDefault();
-    let removedList = financesList.filter((elem, index) => {
+    let removedList = financesList.filter((elem) => {
       return elem.id !== transition.id;
     });
     setFinancesList(removedList);

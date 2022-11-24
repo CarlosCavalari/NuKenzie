@@ -1,0 +1,29 @@
+.empty-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-5);
+}
+.empty-list > li {
+  background-color: #f8f9fa;
+  padding: 23px 15px;
+  border-left: 5px solid var(--color-grey-3);
+  border-radius: var(--radius-1);
+}
+.empty-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-7);
+}
+.empty-decoration-1 {
+  background-color: var(--color-grey-3);
+  width: 70%;
+  height: 20px;
+  border-radius: var(--radius-3);
+}
+.empty-decoration-2 {
+  background-color: var(--color-grey-3);
+  width: 30%;
+  height: 20px;
+  border-radius: var(--radius-3);
+}

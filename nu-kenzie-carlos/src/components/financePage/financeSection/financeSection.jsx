@@ -1,14 +1,9 @@
 import { useState } from "react";
-import { BlankList } from "../financePage/blankList";
-import { FilterContainer } from "../financePage/filterButtons";
-import { Finance } from "../financePage/financeItem";
+import { BlankList } from "../blankList/blankList";
+import { FilterContainer } from "../filterButtons/filterButtons";
+import { Finance } from "../financeSection/financeItem";
 
-export function FinanceSection({
-  financesList,
-  setFinancesList,
-  setTotalValue,
-  atualValue,
-}) {
+export function FinanceSection({ financesList, setFinancesList }) {
   const [filter, setFilter] = useState("Todos");
 
   return (

@@ -1,4 +1,3 @@
-/* --------------------------- HomePage --------------------------- */
 @media (max-width: 1310px) {
   .bg-1 {
     display: none !important;
@@ -86,8 +85,6 @@
     height: 50px !important;
   }
 }
-
-/* --------------------------- FinancesPage --------------------------- */
 
 @media (max-width: 1160px) {
   .top {

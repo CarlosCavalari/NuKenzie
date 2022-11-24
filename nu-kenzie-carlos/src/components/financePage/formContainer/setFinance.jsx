@@ -3,8 +3,8 @@ import {
   DescriptionContainer,
   SetFilterContainer,
   ValueTypeContainer,
-} from "../financePage/formContainers";
-import { TotalMoney } from "../financePage/totalMoney";
+} from "./formContainers";
+import { TotalMoney } from "../totalMoney/totalMoney";
 
 export function SetFinance({ financesList, setFinancesList }) {
   const [description, setDescription] = useState("");

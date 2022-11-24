@@ -1,0 +1,38 @@
+.filter-section {
+  border: 1px solid var(--color-grey-3);
+  border-radius: var(--radius-1);
+  padding: 50px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-8);
+  width: 363px;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-8);
+}
+.description > div {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-10);
+}
+.filters {
+  display: flex;
+  gap: var(--gap-10);
+}
+.filters > div {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-10);
+  width: 50%;
+}
+.filters > div > input {
+  width: 70%;
+}
+.filters > div > select {
+  width: 100%;
+  padding-left: 10px;
+  color: var(--color-grey-2);
+  letter-spacing: 1px;
+}
