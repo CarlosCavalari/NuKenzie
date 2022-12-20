@@ -1,9 +1,9 @@
 # Nu-Kenzie => Desenvolvendo um site de finanças.
 
-### Projeto Desenvolvido como entrega de ReactJS em Novembro de 2022.
+<strong>Projeto Desenvolvido como entrega de ReactJS em Novembro de 2022.</strong>
 
-### Este projeto tem como objetivo utilizar aprendizado básico de "componentes"de ReactJS. Uma aplicação simples
-com cadastro de transações de entrada e saída.
+<strong>Este projeto tem como objetivo utilizar aprendizado básico de "componentes"de ReactJS. Uma aplicação simples
+com cadastro de transações de entrada e saída.</strong>
 
 ## Funcionalidades
 
