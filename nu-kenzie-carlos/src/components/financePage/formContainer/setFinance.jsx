@@ -10,18 +10,18 @@ export function SetFinance({ financesList, setFinancesList }) {
   const [description, setDescription] = useState("");
   const [value, setValue] = useState("");
   const [valueType, setValueType] = useState("Entrada");
-  const [blank, setSection] = useState(true);
 
   function handleSubmit(e) {
     e.preventDefault();
-    setSection(false);
     let item = {
       id: financesList.length + 1,
       description: description,
       value: value,
       valueType: valueType,
     };
-    setFinancesList([...financesList, item]);
+    item.value &&
+      item.description !== "" &&
+      setFinancesList([...financesList, item]);
   }
 
   return (

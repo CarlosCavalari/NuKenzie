@@ -1,4 +1,10 @@
+import { useState } from "react";
+
 export function FilterContainer({ setFilter }) {
+  const [all, setAll] = useState("default-btn brand-btn");
+  const [entry, setEntry] = useState("default-btn");
+  const [exit, setExit] = useState("default-btn");
+
   function handleButtonChange(e) {
     e.preventDefault();
     e.target.value === "Todos"
@@ -6,26 +12,32 @@ export function FilterContainer({ setFilter }) {
       : e.target.value === "Entradas"
       ? setFilter("Entrada")
       : setFilter("Despesa");
+
+    e.target.value === "Todos"
+      ? setAll("brand-btn")(setEntry("default-btn")(setExit("default-btn")))
+      : e.target.value === "Entradas"
+      ? setAll("default-btn")(setEntry("brand-btn")(setExit("default-btn")))
+      : setAll("default-btn")(setEntry("default-btn")(setExit("brand-btn")));
   }
   return (
     <div className="filter-btns">
       <button
         value="Todos"
-        className="default-btn brand-btn all-btn"
+        className={all}
         onClick={(e) => handleButtonChange(e)}
       >
         Todos
       </button>
       <button
         value="Entradas"
-        className="default-btn"
+        className={entry}
         onClick={(e) => handleButtonChange(e)}
       >
         Entradas
       </button>
       <button
         value="Despesas"
-        className="default-btn"
+        className={exit}
         onClick={(e) => handleButtonChange(e)}
       >
         Despesas

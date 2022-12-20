@@ -11,7 +11,13 @@ export function Finance({ transition, filter, financesList, setFinancesList }) {
 
   function Item() {
     return (
-      <li>
+      <li
+        className={
+          transition.valueType === "Entrada"
+            ? "finance-item"
+            : "finance-item exit"
+        }
+      >
         <div className="finance-info">
           <h3>{transition.description}</h3>
           <div>
