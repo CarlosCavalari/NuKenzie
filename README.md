@@ -14,4 +14,4 @@ com cadastro de transações de entrada e saída.</strong>
 • Responsividade.<br>
 
 
-Confira também! <a href="https://nu-kenzie-carlos.vercel.app" target="_blank"> Clique aqui </a> 💸💸
+Confira também! <a href="https://nu-kenzie-carlos.vercel.app" {:target="_blank" rel="noopener"}> Clique aqui </a> 💸💸
