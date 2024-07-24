@@ -8,7 +8,7 @@ com cadastro de transações de entrada e saída.</strong>
 ## Funcionalidades
 
 • A aplicação adiciona de forma correta e consistente dentro da lista de transações.<br>
-• Sua aplicação mostra o cálculo de valor total em tela.<br>
+• A aplicação mostra o cálculo de valor total em tela.<br>
 • A aplicação utiliza um filtro de entradas ou despesas.<br>
 • A aplicação permite deletar uma transação.<br>
 • Responsividade.<br>
